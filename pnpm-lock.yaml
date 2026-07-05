@@ -215,7 +215,7 @@ importers:
         version: 17.4.2
       drizzle-orm:
         specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@types/pg@8.20.0)(pg@8.22.0)
+        version: 1.0.0-rc.4(@types/pg@8.20.0)(pg@8.22.0)(zod@4.4.3)
       express:
         specifier: ^5.2.1
         version: 5.2.1
@@ -225,6 +225,9 @@ importers:
       tsc-watch:
         specifier: ^7.2.1
         version: 7.2.1(typescript@6.0.3)
+      zod:
+        specifier: ^4.4.3
+        version: 4.4.3
     devDependencies:
       '@types/pg':
         specifier: ^8.20.0
@@ -1141,6 +1144,9 @@ packages:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
     engines: {node: '>=0.4'}
 
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
 snapshots:
 
   '@drizzle-team/brocli@0.12.0': {}
@@ -1378,10 +1384,11 @@ snapshots:
       get-tsconfig: 4.14.0
       jiti: 2.7.0
 
-  drizzle-orm@1.0.0-rc.4(@types/pg@8.20.0)(pg@8.22.0):
+  drizzle-orm@1.0.0-rc.4(@types/pg@8.20.0)(pg@8.22.0)(zod@4.4.3):
     optionalDependencies:
       '@types/pg': 8.20.0
       pg: 8.22.0
+      zod: 4.4.3
 
   dunder-proto@1.0.1:
     dependencies:
@@ -1820,3 +1827,5 @@ snapshots:
   wrappy@1.0.2: {}
 
   xtend@4.0.2: {}
+
+  zod@4.4.3: {}

@@ -4,8 +4,9 @@ import type {Express} from "express"
 function createExpressApplication():Express{
     const app = express();
 
+//middleware
 
-
+app.use(express.json())
 
     //routes
 
