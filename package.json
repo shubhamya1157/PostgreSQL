@@ -6,7 +6,10 @@
   "scripts": {
     "start": "node dist/index",
     "build": "tsc -p .",
-    "dev": "tsc-watch -p . --onSuccess \"node dist/index\""
+    "dev": "tsc-watch -p . --onSuccess \"node dist/index\"",
+    "studio":"drizzle-kit studio",
+    "db:genrate":"drizzle-kit generate",
+    "db:migrate":"drizzle-kit migrate"
   },
   "keywords": [],
   "author": "",
